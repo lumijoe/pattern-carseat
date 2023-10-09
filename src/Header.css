@@ -1,0 +1,14 @@
+/* Header.css */
+
+.header {
+    color: white;
+    background-color: rgb(94, 176, 221);
+    font-size: 30px;
+    width: 100vw;
+    padding: 5% 5%;
+    min-height: 52px !important;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  

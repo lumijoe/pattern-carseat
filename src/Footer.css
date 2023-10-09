@@ -1,0 +1,65 @@
+/* Footer.css */
+
+.footer {
+    background-color: rgb(206, 206, 206);
+    padding: 0 5%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 50px;
+  }
+  
+  .left-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+  }
+  
+  .two-lines {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .middle-column {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-column {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: right;
+  }
+  
+  .icon-box {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* アイコン間のスペースを調整 */
+  }
+
+  .icon-box:last-child {
+    margin-right: 0px;
+  }
+  
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px; /* アイコンとテキスト間のスペースを調整 */
+  }
+  
+  p {
+    color: #232323;
+    margin: 0;
+  }
+  
+  .vercel {
+    text-decoration: none;
+    color: #232323;
+  }
