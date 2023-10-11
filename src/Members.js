@@ -1,9 +1,11 @@
 // Members.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CustomCard from './CustomCard';
 
 function Members() {
   const [isCheckedList, setIsCheckedList] = useState(Array(5).fill(false));
+  // メンバーデータのステート
+  const [cardData, setCardData] = useState([]); 
 
   const handleCheckboxChange = (index) => {
     const updatedCheckedList = [...isCheckedList];
@@ -11,14 +13,13 @@ function Members() {
     setIsCheckedList(updatedCheckedList);
   };
 
-  // カードのデータの定義
-  const cardData = [
-    { member: 'Aさん', content: 'This is member A' },
-    { member: 'Bさん', content: 'This is member B' },
-    { member: 'Cさん', content: 'This is member C' },
-    { member: 'Dさん', content: 'This is member D' },
-    { member: 'Eさん', content: 'This is member E' },
-  ];
+  // JSON(public/membersData.json)データを読み込む関数
+  useEffect(() => {
+    fetch('membersData.json') // JSONファイルのパスを指定
+      .then((response) => response.json())
+      .then((data) => setCardData(data))
+      .catch((error) => console.error('データの読み込み中にエラーが発生しました: ', error));
+  }, []);
 
   return (
     <main>

@@ -60,7 +60,7 @@ function Pattern({ candrive, isChecked }) {
             <thead>
               <tr>
                 <th>運転席</th>
-                <th>2席目</th>
+                <th>助手席</th>
                 <th>3席目</th>
                 <th>4席目</th>
                 <th>5席目</th>

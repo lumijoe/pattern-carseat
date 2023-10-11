@@ -2,10 +2,13 @@
 
 import React, { useState } from 'react';
 import './App.css';
-import Header from './Header'; // Headerコンポーネントをインポート
-import Members from './Members'; // Membersコンポーネントをインポート
-import Footer from './Footer'; // Footerコンポーネントをインポート
-import Pattern from './Pattern';
+import Header from './Header';     // Headerトをインポート
+import Members from './Members';   // Membersをインポート
+import Footer from './Footer';     // Footerをインポート
+import Pattern from './Pattern';   // Ptternをインポート
+import Candrive from './Candrive'; // Candriveをインポート
+import Gallery from './Gallery';   // Galleryをインポート
+
 
 function App() {
   const [candrive, setCandrive] = useState([]); // 運転できる人のリスト
@@ -19,6 +22,8 @@ function App() {
   return (
     <div className="App">
       <Header /> {/* Headerコンポーネントを表示 */}
+      <Gallery />
+      <Candrive candrive={candrive} />
       <Members onUpdateCandrive={updateCandrive} /> {/* MembersコンポーネントにupdateCandrive関数を渡す */}
       <Pattern candrive={candrive} isChecked={true} />
       <Footer />
