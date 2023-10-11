@@ -1,4 +1,5 @@
 import React from 'react';
+import './Gallery.css';
 
 function Gallery() {
   // 画像のURLを配列で定義

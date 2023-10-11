@@ -2,13 +2,12 @@
 
 .header {
     color: white;
-    background-color: rgb(94, 176, 221);
-    font-size: 30px;
-    width: 100vw;
-    padding: 5% 5%;
-    min-height: 52px !important;
+    background-color: rgb(36, 38, 40);
+    font-size: 2rem;
+    width: 100%;
+    padding: 5% 0%;
+    max-height: 52px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
   }
   
